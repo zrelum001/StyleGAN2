@@ -1,1 +1,2 @@
-pip install --upgrade pip
+import os as alpha
+alpha.system("pip install --upgrade pip")
